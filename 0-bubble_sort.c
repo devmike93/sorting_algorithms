@@ -10,7 +10,6 @@ void bubble_sort(int *array, size_t size)
 {
 	size_t n = 0, m;
 	int temp;
-	int swapped = 0;
 
 	if (!array || size < 2)
 		return;
@@ -27,8 +26,7 @@ void bubble_sort(int *array, size_t size)
 				print_array(array, size);
 			}
 		}
-		if (!swapped)
-			break;
+
 		n++;
 	}
 }
